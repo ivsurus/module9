@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 import bo.Email;
 import driver.WebDriverSingleton;
-import loggersingleton.LoggerSingleton;
+import logger.LoggerSingleton;
 import page.DraftEmailPage;
 import page.InboxListPage;
 import page.NewEmailPage;
@@ -66,8 +66,9 @@ public class EmailService {
 
 	private Email createNewEmailAndFillInData(){
 		InboxListPage inboxListPage = new InboxListPage(driver);
-		Email email = new Email(RandomDataHelper.getRandomEmailAdress(), RandomDataHelper.getRandomEmailSubject(),
-				RandomDataHelper.getRandomEmailBody());
+		Email email = new Email.EmailBuilder(RandomDataHelper.getRandomEmailAdress()).
+				subject(RandomDataHelper.getRandomEmailSubject()).
+				body(RandomDataHelper.getRandomEmailBody()).build();
 		inboxListPage.toolbarComponent.createNewEmail().fillInEmailAdress(email.getAdress()).
 		fillInEmailSubject(email.getSubject()).fillInEmailBody(email.getBody());
 		LoggerSingleton.getLogger().info(email.toString());

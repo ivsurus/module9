@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import bo.User;
 import driver.WebDriverSingleton;
-import loggersingleton.LoggerSingleton;
+import logger.LoggerSingleton;
 import page.InboxListPage;
 import page.LoginPage;
 import page.component.ToolbarComponent;

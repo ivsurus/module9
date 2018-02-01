@@ -13,8 +13,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import loggersingleton.LoggerSingleton;
+import logger.LoggerSingleton;
 
+//Decorator pattern
 public class CustomDriverDecorator implements WebDriver, JavascriptExecutor {
 
 	protected WebDriver driver;

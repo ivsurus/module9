@@ -22,3 +22,34 @@
 2018-02-01 17:14:41.724 [main] INFO  loggersingleton.LoggerSingleton - Open 'Sent' folder
 2018-02-01 17:15:31.514 [main] INFO  loggersingleton.LoggerSingleton - The email with subject 'testEmail861969' is present in 'Sent' folder: true
 2018-02-01 17:15:32.729 [main] INFO  loggersingleton.LoggerSingleton - Browser will be closed now...
+2018-02-01 19:11:17.575 [main] INFO  loggersingleton.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-01 19:11:34.767 [main] INFO  loggersingleton.LoggerSingleton - Actual user name is: module5testmailbox
+2018-02-01 19:11:35.674 [main] INFO  loggersingleton.LoggerSingleton - The number of emails in 'Sent' is: 1
+2018-02-01 19:11:36.540 [main] INFO  loggersingleton.LoggerSingleton - The number of emails in 'Draft' is: 11
+2018-02-01 19:11:36.540 [main] INFO  loggersingleton.LoggerSingleton - Create email with random data
+2018-02-01 19:11:37.656 [main] INFO  loggersingleton.LoggerSingleton - Email [adress=qwerty4368@yandex.com, subject=testEmail904542, body=Hello! I'm a test email No55]
+2018-02-01 19:12:08.494 [main] INFO  loggersingleton.LoggerSingleton - The email with subject 'testEmail904542' is present in 'Drafts' folder: true
+2018-02-01 19:12:08.494 [main] INFO  loggersingleton.LoggerSingleton - Open an email with subject: testEmail904542
+2018-02-01 19:12:08.871 [main] INFO  loggersingleton.LoggerSingleton - Actual email adress is: qwerty4368@yandex.com
+2018-02-01 19:12:08.912 [main] INFO  loggersingleton.LoggerSingleton - Actual email subject is: testEmail904542
+2018-02-01 19:12:08.972 [main] INFO  loggersingleton.LoggerSingleton - Actual email body is: Hello! I'm a test email No55
+2018-02-01 19:12:09.534 [main] INFO  loggersingleton.LoggerSingleton - Open an email with subject: testEmail904542
+2018-02-01 19:12:09.644 [main] INFO  loggersingleton.LoggerSingleton - Send an email from 'Drafts'
+2018-02-01 19:12:11.326 [main] INFO  loggersingleton.LoggerSingleton - The email with subject 'testEmail904542' is present in 'Drafts' folder: false
+2018-02-01 19:12:11.326 [main] INFO  loggersingleton.LoggerSingleton - Open 'Sent' folder
+2018-02-01 19:13:00.322 [main] INFO  loggersingleton.LoggerSingleton - The email with subject 'testEmail904542' is present in 'Sent' folder: true
+2018-02-01 19:13:01.416 [main] INFO  loggersingleton.LoggerSingleton - Browser will be closed now...
+2018-02-01 19:13:04.217 [main] INFO  loggersingleton.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-01 19:13:12.168 [main] INFO  loggersingleton.LoggerSingleton - Create 3 email(s) with random data
+2018-02-01 19:13:13.565 [main] INFO  loggersingleton.LoggerSingleton - Email [adress=qwerty2863@yandex.com, subject=testEmail915582, body=Hello! I'm a test email No75]
+2018-02-01 19:13:15.273 [main] INFO  loggersingleton.LoggerSingleton - Email [adress=qwerty7857@yandex.com, subject=testEmail967255, body=Hello! I'm a test email No58]
+2018-02-01 19:13:16.891 [main] INFO  loggersingleton.LoggerSingleton - Email [adress=qwerty6705@yandex.com, subject=testEmail654073, body=Hello! I'm a test email No88]
+2018-02-01 19:13:19.023 [main] INFO  loggersingleton.LoggerSingleton - The 'Sent' folder is empty: true
+2018-02-01 19:13:19.295 [main] INFO  loggersingleton.LoggerSingleton - Browser will be closed now...
+2018-02-01 19:14:08.788 [main] INFO  logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-01 19:14:15.238 [main] INFO  logger.LoggerSingleton - Create 3 email(s) with random data
+2018-02-01 19:14:16.802 [main] INFO  logger.LoggerSingleton - Email [adress=qwerty2414@yandex.com, subject=testEmail20423, body=Hello! I'm a test email No70]
+2018-02-01 19:14:18.489 [main] INFO  logger.LoggerSingleton - Email [adress=qwerty4198@yandex.com, subject=testEmail636212, body=Hello! I'm a test email No80]
+2018-02-01 19:14:19.942 [main] INFO  logger.LoggerSingleton - Email [adress=qwerty5991@yandex.com, subject=testEmail67202, body=Hello! I'm a test email No64]
+2018-02-01 19:14:21.922 [main] INFO  logger.LoggerSingleton - The 'Sent' folder is empty: true
+2018-02-01 19:14:22.202 [main] INFO  logger.LoggerSingleton - Browser will be closed now...

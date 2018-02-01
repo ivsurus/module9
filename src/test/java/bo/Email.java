@@ -1,20 +1,21 @@
 package bo;
 
+// Builder pattern
 public class Email {
-	
-	private String adress;
-	private String subject;
-	private String body;
-	
+
+	private String adress; //required
+	private String subject; //optional
+	private String body; //optional
+
 	public Email() {
 		super();
 	}
 
-	public Email(String adress, String subject, String body) {
+	private Email(EmailBuilder builder) {
 		super();
-		this.adress = adress;
-		this.subject = subject;
-		this.body = body;
+		this.adress = builder.adress;
+		this.subject = builder.subject;
+		this.body = builder.body;
 	}
 
 	public String getAdress() {
@@ -27,18 +28,6 @@ public class Email {
 
 	public String getBody() {
 		return body;
-	}
-
-	public void setAdress(String adress) {
-		this.adress = adress;
-	}
-
-	public void setSubject(String subject) {
-		this.subject = subject;
-	}
-
-	public void setBody(String body) {
-		this.body = body;
 	}
 
 	@Override
@@ -82,5 +71,30 @@ public class Email {
 	public String toString() {
 		return "Email [adress=" + adress + ", subject=" + subject + ", body=" + body + "]";
 	}
-	
+
+	public static class EmailBuilder{
+
+		private String adress;
+		private String subject;
+		private String body;
+
+		public EmailBuilder(String adress){
+			this.adress = adress;
+		}
+
+		public EmailBuilder subject(String subject){
+			this.subject = subject;
+			return this;
+		}
+
+		public EmailBuilder body(String body){
+			this.body = body;
+			return this;
+		}
+
+		public Email build(){
+	    	return new Email(this);
+		}
+	}
+
 }

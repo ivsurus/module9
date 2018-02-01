@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+//Singleton pattern
 public class WebDriverSingleton {
 
 	private static WebDriver driver;

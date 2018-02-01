@@ -3,7 +3,7 @@ package service;
 import org.openqa.selenium.WebDriver;
 
 import driver.WebDriverSingleton;
-import loggersingleton.LoggerSingleton;
+import logger.LoggerSingleton;
 import page.DraftEmailPage;
 import page.DraftsListPage;
 import page.SentListPage;

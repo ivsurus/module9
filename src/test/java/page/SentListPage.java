@@ -81,8 +81,4 @@ public class SentListPage extends AbstractPage {
 		ScreenshotHelper.highlightElementAndMakeScreenshot(driver, emptyFolderMessage);
 		return this;
 	}
-
-
-
-
 }
