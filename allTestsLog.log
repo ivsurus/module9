@@ -1,0 +1,24 @@
+2018-02-01 17:13:30.141 [main] INFO  loggersingleton.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-01 17:13:36.697 [main] INFO  loggersingleton.LoggerSingleton - Create 3 email(s) with random data
+2018-02-01 17:13:38.216 [main] INFO  loggersingleton.LoggerSingleton - Email [adress=qwerty4742@yandex.com, subject=testEmail832349, body=Hello! I'm a test email No66]
+2018-02-01 17:13:40.347 [main] INFO  loggersingleton.LoggerSingleton - Email [adress=qwerty937@yandex.com, subject=testEmail992947, body=Hello! I'm a test email No73]
+2018-02-01 17:13:41.771 [main] INFO  loggersingleton.LoggerSingleton - Email [adress=qwerty908@yandex.com, subject=testEmail889986, body=Hello! I'm a test email No23]
+2018-02-01 17:13:43.967 [main] INFO  loggersingleton.LoggerSingleton - The 'Sent' folder is empty: true
+2018-02-01 17:13:44.226 [main] INFO  loggersingleton.LoggerSingleton - Browser will be closed now...
+2018-02-01 17:13:46.982 [main] INFO  loggersingleton.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-01 17:13:53.301 [main] INFO  loggersingleton.LoggerSingleton - Actual user name is: module5testmailbox
+2018-02-01 17:13:54.196 [main] INFO  loggersingleton.LoggerSingleton - The number of emails in 'Sent' is: 0
+2018-02-01 17:13:55.170 [main] INFO  loggersingleton.LoggerSingleton - The number of emails in 'Draft' is: 11
+2018-02-01 17:13:55.170 [main] INFO  loggersingleton.LoggerSingleton - Create email with random data
+2018-02-01 17:13:56.449 [main] INFO  loggersingleton.LoggerSingleton - Email [adress=qwerty313@yandex.com, subject=testEmail861969, body=Hello! I'm a test email No36]
+2018-02-01 17:14:39.034 [main] INFO  loggersingleton.LoggerSingleton - The email with subject 'testEmail861969' is present in 'Drafts' folder: true
+2018-02-01 17:14:39.034 [main] INFO  loggersingleton.LoggerSingleton - Open an email with subject: testEmail861969
+2018-02-01 17:14:39.404 [main] INFO  loggersingleton.LoggerSingleton - Actual email adress is: qwerty313@yandex.com
+2018-02-01 17:14:39.430 [main] INFO  loggersingleton.LoggerSingleton - Actual email subject is: testEmail861969
+2018-02-01 17:14:39.468 [main] INFO  loggersingleton.LoggerSingleton - Actual email body is: Hello! I'm a test email No36
+2018-02-01 17:14:39.967 [main] INFO  loggersingleton.LoggerSingleton - Open an email with subject: testEmail861969
+2018-02-01 17:14:40.059 [main] INFO  loggersingleton.LoggerSingleton - Send an email from 'Drafts'
+2018-02-01 17:14:41.724 [main] INFO  loggersingleton.LoggerSingleton - The email with subject 'testEmail861969' is present in 'Drafts' folder: false
+2018-02-01 17:14:41.724 [main] INFO  loggersingleton.LoggerSingleton - Open 'Sent' folder
+2018-02-01 17:15:31.514 [main] INFO  loggersingleton.LoggerSingleton - The email with subject 'testEmail861969' is present in 'Sent' folder: true
+2018-02-01 17:15:32.729 [main] INFO  loggersingleton.LoggerSingleton - Browser will be closed now...
