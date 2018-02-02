@@ -53,3 +53,19 @@
 2018-02-01 19:14:19.942 [main] INFO  logger.LoggerSingleton - Email [adress=qwerty5991@yandex.com, subject=testEmail67202, body=Hello! I'm a test email No64]
 2018-02-01 19:14:21.922 [main] INFO  logger.LoggerSingleton - The 'Sent' folder is empty: true
 2018-02-01 19:14:22.202 [main] INFO  logger.LoggerSingleton - Browser will be closed now...
+2018-02-02 12:02:41.260 [main] ERROR logger.LoggerSingleton - browser.properties (The system cannot find the file specified)
+2018-02-02 12:02:41.260 [main] INFO  logger.LoggerSingleton - Properties file is readed successfully
+2018-02-02 12:04:06.970 [main] INFO  logger.LoggerSingleton - Properties file is readed successfully
+2018-02-02 12:04:09.750 [main] INFO  logger.LoggerSingleton - Chrome browser is set
+2018-02-02 12:04:09.769 [main] INFO  logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-02 12:04:16.218 [main] INFO  logger.LoggerSingleton - Create 3 email(s) with random data
+2018-02-02 12:04:17.580 [main] INFO  logger.LoggerSingleton - Email [adress=qwerty6242@yandex.com, subject=testEmail248148, body=Hello! I'm a test email No48]
+2018-02-02 12:04:19.455 [main] INFO  logger.LoggerSingleton - Email [adress=qwerty7521@yandex.com, subject=testEmail158591, body=Hello! I'm a test email No41]
+2018-02-02 12:04:21.389 [main] INFO  logger.LoggerSingleton - Email [adress=qwerty7971@yandex.com, subject=testEmail618659, body=Hello! I'm a test email No5]
+2018-02-02 12:04:23.797 [main] INFO  logger.LoggerSingleton - The 'Sent' folder is empty: true
+2018-02-02 12:04:24.115 [main] INFO  logger.LoggerSingleton - Browser will be closed now...
+2018-02-02 12:34:41.321 [main] INFO  logger.LoggerSingleton - Properties file is readed successfully
+2018-02-02 12:34:44.208 [main] INFO  logger.LoggerSingleton - Edge browser is set
+2018-02-02 12:34:44.238 [main] INFO  logger.LoggerSingleton - Navigate to URL: http://yandex.com
+2018-02-02 12:34:47.590 [main] INFO  logger.LoggerSingleton - Create 3 email(s) with random data
+2018-02-02 12:34:52.254 [main] INFO  logger.LoggerSingleton - Browser will be closed now...
