@@ -23,14 +23,7 @@ public class WebDriverSingleton {
 	public static WebDriver getWebDriverInstance() {
 		if (driver == null) {
 			String browserName = getBrowserNameFromProperties();
-			switch(browserName){
-			case "chrome":
-				driver = new ChromeDriverCreator().createDriver();
-				break;
-			case "edge":
-				driver = new EdgeDriverCreator().createDriver();
-				break;
-			}
+			driver = getDriverCreator(browserName).createDriver();
 			driver = new CustomDriverDecorator(driver);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		}
@@ -52,5 +45,16 @@ public class WebDriverSingleton {
 		}
 		LoggerSingleton.getLogger().info("Properties file is readed successfully");
 		return properties.getProperty("browser");
+	}
+
+	private static WebDriverCreator getDriverCreator(String browserName) {
+		WebDriverCreator creator;
+		switch(browserName){
+		case "edge":
+			creator = new EdgeDriverCreator();
+		default:
+			creator = new ChromeDriverCreator();
+		}
+		return creator;
 	}
 }
