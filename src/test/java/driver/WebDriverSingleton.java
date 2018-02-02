@@ -22,7 +22,7 @@ public class WebDriverSingleton {
 
 	public static WebDriver getWebDriverInstance() {
 		if (driver == null) {
-			String browserName = getBrowserName();
+			String browserName = getBrowserNameFromProperties();
 			switch(browserName){
 			case "chrome":
 				driver = new ChromeDriverCreator().createDriver();
@@ -42,7 +42,7 @@ public class WebDriverSingleton {
 		driver = null;
 	}
 
-	private static String getBrowserName(){
+	private static String getBrowserNameFromProperties(){
 		Properties properties = new Properties();
 		try {
 			InputStream input  = new FileInputStream("browser.properties");
