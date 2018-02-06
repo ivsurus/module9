@@ -7,8 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import driver.CustomDriverDecorator;
-import util.ScreenshotHelper;
+import core.driver.CustomDriverDecorator;
+import core.util.ScreenshotHelper;
 
 public class SentListPage extends AbstractPage {
 

@@ -1,4 +1,4 @@
-package driver;
+package core.driver;
 
 import java.io.File;
 import java.util.List;
@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import logger.LoggerSingleton;
+import core.logger.LoggerSingleton;
 
 //Decorator pattern
 public class CustomDriverDecorator implements WebDriver, JavascriptExecutor {

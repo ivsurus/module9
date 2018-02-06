@@ -7,11 +7,13 @@ import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import bo.Email;
 import bo.User;
-import driver.WebDriverSingleton;
+import core.driver.WebDriverSingleton;
 import service.EmailService;
 import service.FolderService;
 import service.UserService;
@@ -25,6 +27,7 @@ public class MailBoxTest {
 	private UserService userService;
 	private EmailService emailService;
 	private FolderService folderService;
+	private User user;
 
 	/**Login to the mail box -> assert, that the login is successful -> create a new mail (fill addressee, subject and body fields) ->
 	   save the mail as a draft -> verify, that the mail presents in ‘Drafts’ folder -> verify the draft content
@@ -32,7 +35,6 @@ public class MailBoxTest {
 		verify, that the mail is in ‘Sent’ folder -> Log off.*/
 	@Test
 	public void draftsAndSentFoldersTest() {
-		User user = userService.getUser();
 		assertEquals(userService.getActualUserName(), user.getLogin());
 		int numberEmailsInSent = folderService.getnumberEmailsInSent();
 		Email email = emailService.createEmailWithRandomDataAndSaveToDrafts();
@@ -57,14 +59,20 @@ public class MailBoxTest {
 		assertTrue(folderService.isSentFolderEmpty());
 	}
 
-	@BeforeMethod
+	@Parameters({"login", "password"})
+ 	@BeforeSuite
+ 	private void setUpUser(String login, String password){
+		user = new User(login, password);
+	}
+
+ 	@BeforeMethod
 	private void setUp(){
 		driver = WebDriverSingleton.getWebDriverInstance();
 		userService = new UserService();
 		emailService = new EmailService();
 		folderService = new FolderService();
 		driver.get(URL);
-		userService.logIn();
+		userService.logIn(user);
 	}
 
 	@AfterMethod

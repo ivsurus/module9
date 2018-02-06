@@ -2,8 +2,8 @@ package service;
 
 import org.openqa.selenium.WebDriver;
 
-import driver.WebDriverSingleton;
-import logger.LoggerSingleton;
+import core.driver.WebDriverSingleton;
+import core.logger.LoggerSingleton;
 import page.DraftEmailPage;
 import page.DraftsListPage;
 import page.SentListPage;

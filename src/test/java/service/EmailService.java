@@ -6,12 +6,12 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 
 import bo.Email;
-import driver.WebDriverSingleton;
-import logger.LoggerSingleton;
+import core.driver.WebDriverSingleton;
+import core.logger.LoggerSingleton;
+import core.util.RandomDataHelper;
 import page.DraftEmailPage;
 import page.InboxListPage;
 import page.NewEmailPage;
-import util.RandomDataHelper;
 
 public class EmailService {
 

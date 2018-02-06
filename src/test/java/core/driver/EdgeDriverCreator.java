@@ -1,11 +1,11 @@
-package driver;
+package core.driver;
 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
-import logger.LoggerSingleton;
+import core.logger.LoggerSingleton;
 
 public class EdgeDriverCreator extends WebDriverCreator {
 	@Override

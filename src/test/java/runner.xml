@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="yandex testing suite" >
+	<parameter name="login"  value="module5testmailbox"/>
+	<parameter name="password"  value="qwerty12345"/>
 	<!-- Tests -->
 	<test name="all tests">
 		<classes>

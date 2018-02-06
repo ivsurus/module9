@@ -1,11 +1,11 @@
-package driver;
+package core.driver;
 
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import logger.LoggerSingleton;
+import core.logger.LoggerSingleton;
 
 public class ChromeDriverCreator extends WebDriverCreator {
 	@Override
